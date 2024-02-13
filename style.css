@@ -1,0 +1,888 @@
+@font-face {
+    font-family: a;
+    src: url("/Assets/Fonts/MonumentExtended-Ultrabold.otf");
+}
+@font-face {
+    font-family: b;
+    src: url("/Assets/Fonts/Gilroy-Black.ttf");
+}
+@font-face {
+    font-family: c;
+    src: url("/Assets/Fonts/Gilroy-BoldItalic.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #F8F8F8;
+    width: 100%;
+}
+#page1{
+    padding-top: 0.1px;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+nav{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vw;
+    margin-top: 2vw;
+    padding: 0 1vw;
+    position: relative;
+}
+nav h2{
+    height: 100%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: b;
+    font-weight: 400;
+    font-size: 1.5vw;
+    border-right: 2px solid black;
+    cursor: pointer;
+}
+nav h2:last-child{
+    border-right: none;
+    width: 16%;
+}
+nav h1{
+    
+    cursor: pointer;
+    height: 100%;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: a;
+    font-size: 2.25vw;
+    letter-spacing: -0.1vw;
+}
+nav h1::after{
+    content: "©️";
+    position: absolute;
+    font-size: 1vw;
+    top: 10%;
+    left: 15%;
+}
+nav h1::before{
+    content: "model management";
+    font-size: 1vw;
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 60%;
+    left: 7.25%;
+}
+#center{
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#video-container{
+    width: 70vw;
+    height: 40vw;
+    position: relative;
+}
+#video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#text{
+    padding: 1vw 0;
+    margin: 0 2vw;
+    border-bottom: 2px solid white;
+    position: absolute;
+    font-family: a;
+    bottom: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 26vw;
+}
+#circle{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text h1{
+    width: 50%;
+    font-size: 2.5vw;
+}
+#text1{
+    width: 100%;
+    position: absolute;
+    color: white;
+    bottom: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.25vw;
+    font-family: b;
+}
+#text1 h4{
+    font-weight: 400;
+    font-size: 1.25vw;
+}
+#page2{
+    width: 100%;
+}
+#images{
+    width: 100%;
+    height: 12vw;
+    padding:0 2vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    mix-blend-mode: multiply;
+}
+#images #container{
+    display: inline-block;
+    animation-name: animation;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+#images::-webkit-scrollbar{
+    display: none;
+}
+
+#images #container img{
+    margin: 0.5vw 3vw;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@keyframes animation {
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+#alphabets{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-family: c;
+    margin-top: 2vw;
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15vw;
+}
+#alphabets h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#alphabets h2:nth-child(6){
+    color: rgba(0, 0, 0, 0.436);
+}
+#alphabets h2:nth-child(7){
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5vw 1vw;
+}
+#alphabets h2:nth-child(12){
+    color: rgba(0, 0, 0, 0.436);
+}
+#alphabets h2:nth-child(18){
+    color: rgba(0, 0, 0, 0.436);
+}
+#alphabets h2:nth-child(24){
+    color: rgba(0, 0, 0, 0.436);
+}
+#page3{
+margin-top: 5vw;
+    width: 100%;
+    height: 43vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8.5vw;
+    background-color: #F8F8F8;
+}
+#p3-left{
+    width: 50%;
+    height: 100%;
+}
+#p3-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#p3-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#upper-part{
+    width: 100%;
+    height: 75%;
+}
+#upper-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#lower-part{
+    padding-top: 0.5vw;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#right-part{
+    width: 45%;
+    height: 100%;
+}
+#left-part{
+    width: 48%;
+    height: 100%;
+}
+#left-part h3{
+    font-family: b;
+    font-weight: 400;
+    line-height: 2.1vw;
+    font-size: 1.75vw;
+}
+#right-part p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1.05vw;
+    line-height: 1.15vw;
+}
+#page3-bottom{
+    background-color: #F8F8F8;
+    margin-top: 1vw;
+    width: 100%;
+    height: 2.75vw;
+    padding-left: 8.5vw;
+    font-family: a;
+}
+#page3-bottom h1{
+    font-size: 2.5vw;
+}
+#page4{
+    margin-top: 3vw;
+    width: 100%;
+    padding: 0 8.5vw;
+}
+#page4-1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 38vw;
+}
+#pg4-left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#pg4-right{
+    width: 55%;
+    height: 100%;
+    background-color: cadetblue;
+}
+#pg4-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+#p4-upper{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#p4-upper img{
+    mix-blend-mode: multiply;
+}
+#p4-lower{
+    width: 100%;
+    height: 20%;
+}
+#p4-lower h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 2.25vw;
+}
+#page4-2{
+    margin-top: 4vw;
+    width: 100%;
+    height: 40vw;
+    background-color: greenyellow;
+}
+#page4-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page5{
+    padding: 0 8.5vw;
+    margin-top: 5vw;
+    width: 100%;
+}
+#page5-upper{
+    width: 100%;
+    height: 4vw;
+    font-family: a;
+    margin-bottom: 5vw;
+}
+#page5-upper h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: -0.1vw;
+    text-align: center;
+
+}
+#page5-lower{
+    width: 100%;
+    /* height: 80vh; */
+}
+.elem{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: 2px solid black;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    position: relative;
+}
+.elem>h1{
+    width: 5%;
+    font-size: 1vw;
+    font-weight: 400;
+}
+.elem-2{
+    width: 45%;
+}
+.elem-2 h1{
+    font-size: 3vw;
+    font-weight: 400;
+}
+.elem-2 h3{
+    font-weight: 600;
+    font-size: 1vw;
+}
+.elem img{
+    position: absolute;
+    height: 6.5vw;
+    left: 0%;
+    opacity: 0;
+    width: 9vw;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.elem:hover img{
+    left: 27%;
+    opacity: 1;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+#page6{
+    margin-top: 5vw;
+    width: 100%;
+    padding: 0 8.5vw;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+}
+#cont-left,#cont-right{
+    width: 49%;
+    height: 100%;
+}
+#cont-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+#cont-right{
+    display: flex;
+    flex-direction: column;
+}
+#cont-upper{
+    padding-top: 0.5vw;
+    width: 100%;
+    height: 45%;
+}
+#cont-lower{
+    width: 100%;
+    height:55%;
+    display: flex;
+    justify-content: space-between;   
+}
+#cont-upper h1{
+    font-family: a;
+    font-size: 2.5vw;
+}
+#cont-upper h3{
+    margin-top: 2.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1.75vw;
+    line-height: 1.75vw;
+}
+#cont-upper p{
+    margin-top: 2.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+#baay{
+    width: 54%;
+    height: 100%;
+}
+#daay{
+    width: 44%;
+    height: 100%;
+    background-color: rgb(180, 245, 179);
+}
+#baay img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#daay img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% 0;
+}
+#page7{
+    width: 100%;
+    margin-top: 5vw;
+    padding: 0 8.5vw;
+}
+#p7-img{
+    width: 100%;
+    height: 40vw;
+}
+#p7-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page8{
+    margin-top: 5vw;
+    padding: 0 8.5vw;
+    width: 100%;
+}
+#p8-container{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+#p8-left{
+    background-image: url('https://images.unsplash.com/photo-1586682643135-060f061868b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvdHJhaXR8ZW58MHwxfDB8fHww');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 53%;
+    height: 100%;
+}
+#p8-right{
+    width: 40%;
+    height: 100%;
+}
+#p8-top{
+    width: 100%;
+    height: 65%;
+}
+#p8-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 40%;
+}
+#p8-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.25vw;
+    width: 100%;
+    height: 35%;
+}
+#p8-b-l{
+    height: 100%;
+    width: 45%;
+}
+#p8-b-l h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+}
+#p8-b-r {
+    width: 50%;
+    height: 100%;
+}
+#p8-b-r p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+}
+#page9{
+    margin-top: 5vw;
+    width: 100%;
+}
+#animation{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 5vw;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+ 
+}
+#animation::-webkit-scrollbar{
+    display: none;
+}
+#animation h1{
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0  1vw;
+    display: inline-block;
+    font-family: a;
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 0.5vw;
+}
+@keyframes anime{
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(calc(-100% - 2.15vw));
+    }
+}
+#page10{
+    margin-top: 5vw;
+    width: 100%;
+    padding: 0 8.5vw;
+}
+#p10-container{
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    justify-content: space-between;
+}
+#p10-left{
+    width: 19%;
+    height: 100%;
+}
+#p10-left h1{
+    font-family: a;
+    font-size: 3vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+#p10-right{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#p10-r-l{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#p10-r-l-upper{
+    width: 100%;
+    height: 35%;
+}
+#p10-r-l-upper h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.75vw;
+    letter-spacing: -0.1vw;
+}
+#p10-r-l-lower{
+    width: 100%;
+    height: 60%;
+}
+#p10-r-l-lower img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#p10-r-r{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#p10-r-r-upper{
+    width: 100%;
+    height: 35%;
+}
+#p10-r-r-upper h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.65vw;
+    letter-spacing: -0.1vw;
+}
+#p10-r-r-lower{
+    width: 100%;
+    height: 60%;
+}
+#p10-r-r-lower img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page11{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 8.5vw;
+    margin-top: 6vw;
+    width: 100%;
+    height: 19vw;
+}
+#p11-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#p11-left{
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+#p11-left h1{
+    font-family: a;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: -0.1vw;
+}
+#p11-left h1::after{
+    content: "©️";
+    font-size: 1vw;
+    position: absolute;
+}
+#p11-left h1::before{
+    content: "model management";
+    font-size: 1vw;
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 14%;
+    right: 19%;
+}
+#p11-right{
+    width: 69%;
+    height: 100%;
+    display: flex;
+
+}
+#r1{
+   width: 23%;
+   height: 100%;
+   border-right: 2px solid black;
+}
+#r1 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+#r2{
+   width: 23%;
+   height: 100%;
+   border-right: 2px solid black;
+}
+#r2 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+#r3{
+    width: 54%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+#r3-upper{
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#r3-upper h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+#r3-lower{
+    padding: 0 4vw;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#icons{
+    display: flex;
+    gap: 0.5vw;
+}
+#icons h5 i{
+    font-size: 1.2vw;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#txt h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+}
+#txt2 h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+}
+#txt3 h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+}
+#page12{
+    width: 100%;
+    height: 5vh;
+}
+@media (max-width:600px) {
+    #main{
+        background-color: #F8F8F8;
+        width: 100%;
+    }
+    nav{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 7vw;
+        margin-top: 2vw;
+        padding: 0 1vw;
+        position: relative;
+    }
+    nav h2{
+        display: none;
+    }
+    nav h1{ 
+        padding-left: 15vw;
+        cursor: pointer;
+        height: 100%;
+        width: 17%;
+        font-family: a;
+        font-size: 5.25vw;
+        letter-spacing: -0.1vw;
+    }
+    nav h1::after{
+        font-size: 2vw;
+        left: 31%;
+    }
+    nav h1::before{
+        font-size: 2vw;
+        top: 65%;
+        left: 13.25%;
+    }
+    #circle h2{
+        font-size: 1.5vw;
+    }
+    #alphabets h1{
+        font-size: 3vw;
+    }
+    #alphabets h2{
+        font-size: 3vw;
+    }
+    #alphabets h2:nth-child(7){
+        padding: 0.15vw 1vw;
+    }
+    #page3-bottom h1{
+        font-size: 2.75vw;
+    }
+    #p4-upper img{
+        width: 70%;
+    }
+    .elem img{
+        left: 25%;
+        opacity: 1;
+    }
+    #animation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #cont-left,#cont-right{
+        width: 100%;
+        height: 50%;
+    }
+    #cont-left img{
+        object-position: center;
+    }
+    #cont-upper h1{
+        font-size: 6.5vw;
+        text-align: center;
+        margin-top: 1vw;
+    }
+    #cont-upper h3{
+        font-size: 4.75vw;
+        line-height: 3.75vw;
+    }
+    #cont-upper p{
+        font-size: 2.35vw;
+    }
+
+}
